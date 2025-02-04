@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "p1:start": "yarn --cwd packages/project-1 expo start",
+    "p1:android": "yarn --cwd packages/project-1 expo start --android -c",
+    "p1:ios": "yarn --cwd packages/project-1 expo start --ios -c",
+    "p1:web": "yarn --cwd packages/project-1 expo start --web -c",
+    "p1:test": "yarn --cwd packages/project-1 jest --watchAll",
+    "p1:lint": "yarn --cwd packages/project-1 expo lint"
+  }
+}
